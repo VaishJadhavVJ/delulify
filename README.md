@@ -11,40 +11,46 @@ Because sometimes the stack trace hurts more than the bug itself.
 ## ✨ Features
 
 - **🛡️ Crash Interception** – Hides the scary wall of text and shows you exactly where it broke.
-- **🧠 Smart Hints** – Translates Python errors into human language.  
-  *Example:* `IndexError` → "You tried to grab item 10 from a list of 3."
+- **🧠 Smart Hints** – Translates Python errors into human language.
+  *Example:* \`IndexError\` → "You tried to grab item 10 from a list of 3."
 - **🎭 Three Vibes**
-  - `gentle` – Soft, therapy-speak. *"You are valid."*
-  - `roast` – Brutal honesty. *"You shadowed your own variable. Embarrassing."*
-  - `chaotic` – Gen Z brainrot. *"The compiler is gaslighting you."*
+  - \`gentle\` – Soft, therapy-speak. *"You are valid."*
+  - \`roast\` – Brutal honesty. *"You shadowed your own variable. Embarrassing."*
+  - \`chaotic\` – Gen Z brainrot. *"The compiler is gaslighting you."*
 
 ---
 
 ## 📦 Installation
 
-Clone the repository and install it in editable mode:
-```bash
-https://github.com/VaishJadhavVJ/delulify
+Since this is now published on PyPI, you can install it globally:
+
+\`\`\`bash
+pipx install delulify
+\`\`\`
+
+Or for development (if you cloned the repo):
+\`\`\`bash
+git clone https://github.com/VaishJadhavVJ/delulify
 cd delulify
 pip install -e .
-```
+\`\`\`
 
 ---
 
 ## 🚀 Usage
 
-Simply put `delulify` before your normal Python command.
+Simply put \`delulify\` before your normal Python command.
 
 ### Basic Run (Default Gentle Mode):
-```bash
+\`\`\`bash
 delulify my_script.py
-```
+\`\`\`
 
 ### Choose Your Vibe:
-```bash
+\`\`\`bash
 delulify my_script.py --mode=roast
 delulify my_script.py --mode=chaotic
-```
+\`\`\`
 
 ---
 
@@ -52,13 +58,13 @@ delulify my_script.py --mode=chaotic
 
 **Input:**
 
-`buggy.py`
-```python
+\`buggy.py\`
+\`\`\`python
 print(10 / 0)
-```
+\`\`\`
 
 **Output:**
-```
+\`\`\`
 ( x _ x ) Ouch! The script died.
 
 --- SHORT TRACE ---
@@ -68,7 +74,7 @@ File "buggy.py", line 1, in <module>
 WHAT: ZeroDivisionError
 WHY: You cannot divide a number by zero. It breaks the laws of physics.
 VIBE: DIVIDING BY ZERO? IN THIS ECONOMY?? 📉
-```
+\`\`\`
 
 ---
 
@@ -76,15 +82,15 @@ VIBE: DIVIDING BY ZERO? IN THIS ECONOMY?? 📉
 
 Delulify currently has unique personalities for:
 
-- `ZeroDivisionError`
-- `IndexError`
-- `KeyError`
-- `NameError`
-- `SyntaxError`
-- `IndentationError`
-- `TypeError`
-- `ModuleNotFoundError`
-- `KeyboardInterrupt` (Ctrl + C)
+- \`ZeroDivisionError\`
+- \`IndexError\`
+- \`KeyError\`
+- \`NameError\`
+- \`SyntaxError\`
+- \`IndentationError\`
+- \`TypeError\`
+- \`ModuleNotFoundError\`
+- \`KeyboardInterrupt\` (Ctrl + C)
 
 ---
 
