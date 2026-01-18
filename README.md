@@ -1,4 +1,3 @@
-cat <<EOT > README.md
 # 💫 Delulify
 
 **"Turns your runtime errors into emotionally supportive debugging hints."** 💅
@@ -104,4 +103,3 @@ Got a funnier roast? Found a new error type?
 Bugs are inevitable. Stack traces are hostile. Developers deserve emotional support.
 
 **Debug responsibly. Stay delulu.** ✨
-EOT
