@@ -1,7 +1,7 @@
 import sys
 import os
 import runpy
-from .interceptor import setup_exception_hookfrom .ui import print_header 
+from .interceptor import setup_exception_hook
 
 def main() -> None:
     """

@@ -1,7 +1,21 @@
+# --- Python Junk ---
 __pycache__/
 *.py[cod]
 *$py.class
 *.egg-info/
 dist/
 build/
+.pytest_cache/
+
+# --- Mac Junk ---
 .DS_Store
+
+# --- Virtual Environment ---
+venv/
+env/
+
+# --- Security (CRITICAL) ---
+.env
+.env.local
+.pypirc
+pip-log.txt
