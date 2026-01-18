@@ -24,7 +24,7 @@ Because sometimes the stack trace hurts more than the bug itself.
 
 Clone the repository and install it in editable mode:
 ```bash
-git clone https://github.com/YOUR_USERNAME/delulify.git
+https://github.com/VaishJadhavVJ/delulify
 cd delulify
 pip install -e .
 ```
