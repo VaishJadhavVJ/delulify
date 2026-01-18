@@ -1,3 +1,4 @@
+cat <<EOT > README.md
 # 💫 Delulify
 
 **"Turns your runtime errors into emotionally supportive debugging hints."** 💅
@@ -22,18 +23,13 @@ Because sometimes the stack trace hurts more than the bug itself.
 
 ## 📦 Installation
 
-Since this is now published on PyPI, you can install it globally:
+Get it straight from PyPI:
 
 \`\`\`bash
-pipx install delulify
+pip install delulify
 \`\`\`
 
-Or for development (if you cloned the repo):
-\`\`\`bash
-git clone https://github.com/VaishJadhavVJ/delulify
-cd delulify
-pip install -e .
-\`\`\`
+*(Note: If you are on a strict macOS setup, you might need to use \`pipx install delulify\` instead).*
 
 ---
 
@@ -91,6 +87,7 @@ Delulify currently has unique personalities for:
 - \`TypeError\`
 - \`ModuleNotFoundError\`
 - \`KeyboardInterrupt\` (Ctrl + C)
+- \`ValueError\`
 
 ---
 
@@ -107,3 +104,4 @@ Got a funnier roast? Found a new error type?
 Bugs are inevitable. Stack traces are hostile. Developers deserve emotional support.
 
 **Debug responsibly. Stay delulu.** ✨
+EOT
